@@ -23,7 +23,7 @@ $(".timeBlock").each(function () {
     $(".textarea").addClass("past");
   }
   // create classes for each time block to indicate past present or future
-  console.log(timeBlockHour);
+  //   console.log(timeBlockHour);
 });
 
 // allow for input to be saved to local storage
@@ -37,7 +37,7 @@ $("#2 .textarea").val(localStorage.getItem("2"));
 $("#3 .textarea").val(localStorage.getItem("3"));
 $("#4 .textarea").val(localStorage.getItem("4"));
 $("#5 .textarea").val(localStorage.getItem("5"));
-console.log(timeSetup);
-console.log(currentTime);
+// console.log(timeSetup);
+// console.log(currentTime);
 
 // allow for input in timeblock fields
