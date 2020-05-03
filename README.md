@@ -2,8 +2,8 @@
 
 Blake Thompson
 
-
 # Usage
+
 ```
 When planner is opened
 Then the current day is displayed at the top of the clanedar
@@ -20,7 +20,15 @@ Then the saved events persis
 
 # Visuals
 
-_To be determined_
+![Demo image](https://i.imgur.com/YeTcKnT.gif)
 
 # Sources Cited
 
+Jquery Api
+[https://api.Jquery.com]
+<br>
+MDN attr()
+[https://developer.mozilla.org/en-US/docs/Web/CSS/attr]
+<br>
+MomentJs
+[https://momentjs.com/]
