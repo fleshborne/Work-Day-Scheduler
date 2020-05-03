@@ -1,11 +1,14 @@
 // Create time setup to show current day
 var timeSetup = moment().format("MMM Do YYYY");
 var currentDayEl = $("#currentDay");
-var currentTime = moment().format("HH:mm:ss a");
+var currentTime = moment().format("HH");
 currentDayEl.append(timeSetup);
 $(".saveBtn").on("click", function () {
+  // assign a variable to equal the value of the text area
   var valueText = $(this).siblings(".textarea").val();
+  // assign a variable to equal the value of the timeBlock
   var hourKey = $(this).siblings(".timeB").attr("time");
+  // store the items in local storage
   localStorage.setItem(hourKey, valueText);
 });
 
@@ -18,12 +21,13 @@ $(".timeBlock").each(function () {
   if (timeBlockHour === currentTime) {
     $(".textarea").addClass("present");
   } else if (timeBlockHour < currentTime) {
-    $(".textarea").addClass("future");
-  } else {
     $(".textarea").addClass("past");
+  } else {
+    $(".textarea").addClass("future");
   }
   // create classes for each time block to indicate past present or future
-  //   console.log(timeBlockHour);
+  console.log(timeBlockHour);
+  $(timeBlockHour).val();
 });
 
 // allow for input to be saved to local storage
@@ -32,12 +36,12 @@ $("#9 .textarea").val(localStorage.getItem("9"));
 $("#10 .textarea").val(localStorage.getItem("10"));
 $("#11 .textarea").val(localStorage.getItem("11"));
 $("#12 .textarea").val(localStorage.getItem("12"));
-$("#1 .textarea").val(localStorage.getItem("1"));
-$("#2 .textarea").val(localStorage.getItem("2"));
-$("#3 .textarea").val(localStorage.getItem("3"));
-$("#4 .textarea").val(localStorage.getItem("4"));
-$("#5 .textarea").val(localStorage.getItem("5"));
+$("#13 .textarea").val(localStorage.getItem("13"));
+$("#14 .textarea").val(localStorage.getItem("14"));
+$("#15 .textarea").val(localStorage.getItem("15"));
+$("#16 .textarea").val(localStorage.getItem("16"));
+$("#17 .textarea").val(localStorage.getItem("17"));
 // console.log(timeSetup);
-// console.log(currentTime);
+console.log(currentTime);
 
 // allow for input in timeblock fields
