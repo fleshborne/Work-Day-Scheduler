@@ -26,7 +26,7 @@ $(".timeBlock").each(function () {
 
 // allow for input to be saved to local storage
 // Items should perists after refresh
-$("#9 .textarea").val(localStorage.getItem("9"));
+$("#9 .textarea").val(localStorage.getItem(""));
 // $("#10 .textarea").val(localStorage.getItem("10"));
 console.log(timeSetup);
 console.log(currentTime);
