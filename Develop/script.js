@@ -15,7 +15,9 @@ $(".saveBtn").on("click", function () {
 $(".timeBlock").each(function () {
   // access this time block by its id
   var timeBlockHour = $(this).attr("id");
-  if (timeBlockHour > currentTime) {
+  if (timeBlockHour === currentTime) {
+    $(".textarea").addClass("present");
+  } else if (timeBlockHour < currentTime) {
     $(".textarea").addClass("future");
   } else {
     $(".textarea").addClass("past");
@@ -27,7 +29,14 @@ $(".timeBlock").each(function () {
 // allow for input to be saved to local storage
 // Items should perists after refresh
 $("#9 .textarea").val(localStorage.getItem("9"));
-// $("#10 .textarea").val(localStorage.getItem("10"));
+$("#10 .textarea").val(localStorage.getItem("10"));
+$("#11 .textarea").val(localStorage.getItem("11"));
+$("#12 .textarea").val(localStorage.getItem("12"));
+$("#1 .textarea").val(localStorage.getItem("1"));
+$("#2 .textarea").val(localStorage.getItem("2"));
+$("#3 .textarea").val(localStorage.getItem("3"));
+$("#4 .textarea").val(localStorage.getItem("4"));
+$("#5 .textarea").val(localStorage.getItem("5"));
 console.log(timeSetup);
 console.log(currentTime);
 
