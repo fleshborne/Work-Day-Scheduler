@@ -53,70 +53,12 @@ $(".timeBlock").each(function () {
   var timeBlockHour = parseInt($(this).attr("id"));
   //   var timeBlockHour = 24;
   if (timeBlockHour === currentTime) {
-    // $(".timeBlock").children("#9 .textarea").addClass("present");
     $(".textarea").addClass("present");
-    // $("#10 .textarea").addClass("present");
-    // $("#11 .textarea").addClass("present");
-    // $("#12 .textarea").addClass("present");
-    // $("#13 .textarea").addClass("present");
-    // $("#14 .textarea").addClass("present");
-    // $("#15 .textarea").addClass("present");
-    // $("#16 .textarea").addClass("present");
-    // $("#17 .textarea").addClass("present");
   } else if (timeBlockHour < currentTime) {
-    // $(".timeBlock").children("#9 .textarea").removeClass("present");
-    // $("#9 .textarea").remove(".present");
-    // $("#10 .textarea").remove(".present");
-    // $("#11 .textarea").remove(".present");
-    // $("#12 .textarea").remove(".present");
-    // $("#13 .textarea").remove(".present");
-    // $("#14 .textarea").remove(".present");
-    // $("#15 .textarea").remove(".present");
-    // $("#16 .textarea").remove(".present");
-    // $("#17 .textarea").remove(".present");
     $(".textarea").addClass("past");
-    // $("#10 .textarea").addClass("past");
-    // $("#11 .textarea").addClass("past");
-    // $("#12 .textarea").addClass("past");
-    // $("#13 .textarea").addClass("past");
-    // $("#14 .textarea").addClass("past");
-    // $("#15 .textarea").addClass("past");
-    // $("#16 .textarea").addClass("past");
-    // $("#17 .textarea").addClass("past");
   } else {
-    // $(".timeBlock").children("#9 .textarea").addClass("future");
-    // $(".timeBlock").children("#9 .textarea").remove("present");
-    // $(".timeBlock").children("#9 .textarea").removeClass("future");
-    // would these jquery selectors work better?
-    //
-
     $(".textarea").remove("past");
-    // $("#10 .textarea").remove(".past");
-    // $("#11 .textarea").remove(".past");
-    // $("#12 .textarea").remove(".past");
-    // $("#13 .textarea").remove(".past");
-    // $("#14 .textarea").remove(".past");
-    // $("#15 .textarea").remove(".past");
-    // $("#16 .textarea").remove(".past");
-    // $("#17 .textarea").remove(".past");
-    // $(".textarea").remove(".present");
-    // $("#10 .textarea").remove(".present");
-    // $("#11 .textarea").remove(".present");
-    // $("#12 .textarea").remove(".present");
-    // $("#13 .textarea").remove(".present");
-    // $("#14 .textarea").remove(".present");
-    // $("#15 .textarea").remove(".present");
-    // $("#16 .textarea").remove(".present");
-    // $("#17 .textarea").remove(".present");
     $(".textarea").addClass("future");
-    // $("#10 .textarea").addClass("future");
-    // $("#11 .textarea").addClass("future");
-    // $("#12 .textarea").addClass("future");
-    // $("#13 .textarea").addClass("future");
-    // $("#14 .textarea").addClass("future");
-    // $("#15 .textarea").addClass("future");
-    // $("#16 .textarea").addClass("future");
-    // $("#17 .textarea").addClass("future");
   }
   // create classes for each time block to indicate past present or future
   console.log(timeBlockHour);
