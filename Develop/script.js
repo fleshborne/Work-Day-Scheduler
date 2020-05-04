@@ -1,12 +1,3 @@
-// var save9 = $(".9");
-// var save10 = $(".10");
-// var save11 = $(".11");
-// var save12 = $(".12");
-// var save13 = $(".13");
-// var save14 = $(".14");
-// var save15 = $(".15");
-// var save16 = $(".16");
-// var save17 = $(".17");
 // Create time setup to show current day
 var timeSetup = moment().format("MMM Do YYYY");
 var currentDayEl = $("#currentDay");
@@ -20,33 +11,7 @@ $(".saveBtn").on("click", function () {
   // store the items in local storage
   localStorage.setItem(hourKey, valueText);
 });
-// trying to see if putting the saved data into an aray would solve my issue
-// var allSaves = [
-//   save9,
-//   save10,
-//   save11,
-//   save12,
-//   save13,
-//   save14,
-//   save15,
-//   save16,
-//   save17,
-// ];
 
-// allSaves.forEach(function (saves) {
-//   var saveTimeId = parseInt(saves[0]);
-//   console.log(saveTimeId);
-//   console.log(currentTime);
-
-//   if (saveTimeId === currentTime) {
-//     $(".textarea").addClass("present");
-//   } else if (saveTimeId < currentTime) {
-//     $(".textarea").addClass("past");
-//   } else {
-//     $(".textarea").addClass("future");
-//   }
-// });
-//$("#9 .textarea").addClass("present");
 // an if function that compares current time to time of the block and assigns appropriate class to text area
 $(".timeBlock").each(function () {
   // access this time block by its id
