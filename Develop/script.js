@@ -17,14 +17,22 @@ $(".timeBlock").each(function () {
   // access this time block by its id
   var timeBlockHour = parseInt($(this).attr("id"));
   //   var timeBlockHour = 24;
+  //   if (timeBlockHour < currentTime) {
+  //     $(".timeBlock").children(".textarea9").addClass("past");
+  //   } else if (timeBlockHour > currentTime) {
+  //     // $(".timeBlock").children(".textarea9").addClass("future");
+  //   } else if (timeBlockHour === currentTime) {
+  //     $(".timeBlock").children(".textarea").addClass("present");
+  //     $(".timeBlock").children(".17").addClass("present");
+  //   }
   if (timeBlockHour === currentTime) {
-    $(".textarea").addClass("present");
+    $(this).children(".textArea").addClass("present");
   } else if (timeBlockHour < currentTime) {
-    $(".textarea").addClass("past");
-  } else {
-    $(".textarea").remove("past");
-    $(".textarea").addClass("future");
+    $(this).children(".textArea").addClass("past");
+  } else if (timeBlockHour > currentTime) {
+    $(this).children(".textArea").addClass("future");
   }
+
   // create classes for each time block to indicate past present or future
   console.log(timeBlockHour);
   console.log(currentTime);
@@ -32,15 +40,15 @@ $(".timeBlock").each(function () {
 
 // allow for input to be saved to local storage
 // Items should perists after refresh
-$("#9 .textarea").val(localStorage.getItem("9"));
-$("#10 .textarea").val(localStorage.getItem("10"));
-$("#11 .textarea").val(localStorage.getItem("11"));
-$("#12 .textarea").val(localStorage.getItem("12"));
-$("#13 .textarea").val(localStorage.getItem("13"));
-$("#14 .textarea").val(localStorage.getItem("14"));
-$("#15 .textarea").val(localStorage.getItem("15"));
-$("#16 .textarea").val(localStorage.getItem("16"));
-$("#17 .textarea").val(localStorage.getItem("17"));
+$(".9").val(localStorage.getItem("9"));
+$(".10").val(localStorage.getItem("10"));
+$(".11").val(localStorage.getItem("11"));
+$(".12").val(localStorage.getItem("12"));
+$(".13").val(localStorage.getItem("13"));
+$(".14").val(localStorage.getItem("14"));
+$(".15").val(localStorage.getItem("15"));
+$(".16").val(localStorage.getItem("16"));
+$(".17").val(localStorage.getItem("17"));
 // console.log(timeSetup);
 // console.log(currentTime);
 
