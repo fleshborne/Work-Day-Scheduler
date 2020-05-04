@@ -60,7 +60,7 @@ $(".timeBlock").each(function () {
     $("#15 .textarea").addClass("past");
     $("#16 .textarea").addClass("past");
     $("#17 .textarea").addClass("past");
-  } else if (timeBlockHour > currentTime) {
+  } else {
     // $(".timeBlock").children("#9 .textarea").addClass("future");
     // $(".timeBlock").children("#9 .textarea").remove("present");
     // $(".timeBlock").children("#9 .textarea").removeClass("future");
