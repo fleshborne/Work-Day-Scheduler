@@ -33,15 +33,6 @@ $(".timeBlock").each(function () {
     $("#17 .textarea").addClass("present");
   } else if (timeBlockHour < currentTime) {
     // $(".timeBlock").children("#9 .textarea").removeClass("present");
-    $("#9 .textarea").remove("future");
-    $("#10 .textarea").remove("future");
-    $("#11 .textarea").remove("future");
-    $("#12 .textarea").remove("future");
-    $("#13 .textarea").remove("future");
-    $("#14 .textarea").remove("future");
-    $("#15 .textarea").remove("future");
-    $("#16 .textarea").remove("future");
-    $("#17 .textarea").remove("future");
     $("#9 .textarea").remove(".present");
     $("#10 .textarea").remove(".present");
     $("#11 .textarea").remove(".present");
@@ -76,15 +67,15 @@ $(".timeBlock").each(function () {
     $("#15 .textarea").remove(".past");
     $("#16 .textarea").remove(".past");
     $("#17 .textarea").remove(".past");
-    // $("#9 .textarea").remove(".present");
-    // $("#10 .textarea").remove(".present");
-    // $("#11 .textarea").remove(".present");
-    // $("#12 .textarea").remove(".present");
-    // $("#13 .textarea").remove(".present");
-    // $("#14 .textarea").remove(".present");
-    // $("#15 .textarea").remove(".present");
-    // $("#16 .textarea").remove(".present");
-    // $("#17 .textarea").remove(".present");
+    $("#9 .textarea").remove(".present");
+    $("#10 .textarea").remove(".present");
+    $("#11 .textarea").remove(".present");
+    $("#12 .textarea").remove(".present");
+    $("#13 .textarea").remove(".present");
+    $("#14 .textarea").remove(".present");
+    $("#15 .textarea").remove(".present");
+    $("#16 .textarea").remove(".present");
+    $("#17 .textarea").remove(".present");
     $("#9 .textarea").addClass("future");
     $("#10 .textarea").addClass("future");
     $("#11 .textarea").addClass("future");
@@ -111,6 +102,6 @@ $("#15 .textarea").val(localStorage.getItem("15"));
 $("#16 .textarea").val(localStorage.getItem("16"));
 $("#17 .textarea").val(localStorage.getItem("17"));
 // console.log(timeSetup);
-console.log(currentTime);
+// console.log(currentTime);
 
 // allow for input in timeblock fields
