@@ -16,15 +16,6 @@ $(".saveBtn").on("click", function () {
 $(".timeBlock").each(function () {
   // access this time block by its id
   var timeBlockHour = parseInt($(this).attr("id"));
-  //   var timeBlockHour = 24;
-  //   if (timeBlockHour < currentTime) {
-  //     $(".timeBlock").children(".textarea9").addClass("past");
-  //   } else if (timeBlockHour > currentTime) {
-  //     // $(".timeBlock").children(".textarea9").addClass("future");
-  //   } else if (timeBlockHour === currentTime) {
-  //     $(".timeBlock").children(".textarea").addClass("present");
-  //     $(".timeBlock").children(".17").addClass("present");
-  //   }
   if (timeBlockHour === currentTime) {
     $(this).children(".textArea").addClass("present");
   } else if (timeBlockHour < currentTime) {
