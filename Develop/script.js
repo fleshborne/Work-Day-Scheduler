@@ -1,12 +1,12 @@
-var save9 = $(".9");
-var save10 = $(".10");
-var save11 = $(".11");
-var save12 = $(".12");
-var save13 = $(".13");
-var save14 = $(".14");
-var save15 = $(".15");
-var save16 = $(".16");
-var save17 = $(".17");
+// var save9 = $(".9");
+// var save10 = $(".10");
+// var save11 = $(".11");
+// var save12 = $(".12");
+// var save13 = $(".13");
+// var save14 = $(".14");
+// var save15 = $(".15");
+// var save16 = $(".16");
+// var save17 = $(".17");
 // Create time setup to show current day
 var timeSetup = moment().format("MMM Do YYYY");
 var currentDayEl = $("#currentDay");
